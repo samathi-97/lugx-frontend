@@ -25,15 +25,15 @@ jobs:
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/lugx-frontend:latest
 
-    - name: Set up Kubeconfig
-      run: |
-        echo "${{ secrets.KUBE_CONFIG_DATA }}" | base64 --decode > $HOME/.kube/config
+    # - name: Set up Kubeconfig
+    #   run: |
+    #     echo "${{ secrets.KUBE_CONFIG_DATA }}" | base64 --decode > $HOME/.kube/config
 
-    - name: Deploy to Kubernetes
-      run: |
-        kubectl apply -f frontend-deployment.yaml
-        kubectl apply -f frontend-service.yaml
+    # - name: Deploy to Kubernetes
+    #   run: |
+    #     kubectl apply -f frontend-deployment.yaml
+    #     kubectl apply -f frontend-service.yaml
 
-    - name: Verify rollout status
-      run: |
-        kubectl rollout status deployment/lugx-frontend
+    # - name: Verify rollout status
+    #   run: |
+    #     kubectl rollout status deployment/lugx-frontend
