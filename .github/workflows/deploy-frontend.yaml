@@ -1,3 +1,4 @@
+#Builds your Docker image and push it into Dockerhub
 name: CI/CD Pipeline - Lugx Frontend
 
 on:

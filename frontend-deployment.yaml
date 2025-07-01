@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: lugx-frontend
-          image: lugx-frontend:latest
-          imagePullPolicy: Never
+          image: samathikisalka/lugx-frontend:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 80 
