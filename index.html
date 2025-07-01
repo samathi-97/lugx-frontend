@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <script></script>
 <!--
 
 TemplateMo 589 lugx gaming
@@ -30,68 +29,6 @@ https://templatemo.com/tm-589-lugx-gaming
   </head>
 
 <body>
-
-  <!-- ***** page view 
-  <script>
-    fetch('http://127.0.0.1:54656/analytics', {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({
-    eventType: "page_view",
-    page: window.location.pathname,
-    timestamp: new Date().toISOString(),
-    sessionId: getSessionId(),
-    userId: "guest"
-  })
-});
-
-function sendAnalyticsEvent(eventType, page) {
-  fetch('http://localhost:8080/analytics', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      eventType: eventType,
-      page: page,
-      timestamp: new Date().toISOString(),
-      sessionId: getSessionId(),
-      userId: 'guest' // Or replace with real user ID
-    })
-  }).then(response => {
-    if (!response.ok) {
-      console.error('Analytics error:', response.statusText);
-    }
-  }).catch(err => console.error('Fetch error:', err));
-}
-
-// Generate session ID (simple)
-function getSessionId() {
-  if (!sessionStorage.sessionId) {
-    sessionStorage.sessionId = 'sess-' + Math.random().toString(36).substr(2, 9);
-  }
-  return sessionStorage.sessionId;
-}
-
-// Send event on page load
-document.addEventListener("DOMContentLoaded", function () {
-  sendAnalyticsEvent("page_view", window.location.pathname);
-});
-
-
-document.addEventListener('click', function () {
-  sendAnalyticsEvent("click", window.location.pathname);
-});
-
-window.addEventListener('scroll', function () {
-  sendAnalyticsEvent("scroll", window.location.pathname);
-});
-
-
-</script> ***** -->
-
 
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
