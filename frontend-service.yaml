@@ -3,11 +3,11 @@ kind: Service
 metadata:
   name: lugx-frontend
 spec:
-  type: LoadBalancer 
+  type: ClusterIP                                  #LoadBalancer 
   selector:
     app: lugx-frontend
   ports:
     - protocol: TCP
       port: 80          
       targetPort: 80    
-      nodePort: 30081  
+      #nodePort: 30081  
